@@ -53,7 +53,7 @@ class MapsViewModel @Inject constructor(
         }
     }
     fun getLastLocation() {
-        viewModelScope.launch {getLastLocation.invoke(null)}
+       getLastLocation.invoke(null)
     }
     //view model defines scope
     fun getDirections () = viewModelScope.launch {
